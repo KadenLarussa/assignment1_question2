@@ -8,7 +8,7 @@ int main() {
             arr[i][j] = i * 5 + j;
         }
     }
-    //part b print row major
+    //part b print row major:
     std::cout << "Row Major" << std::endl;
     for(int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
@@ -18,7 +18,7 @@ int main() {
     }
     std::cout << std::endl;
 
-    //part a print column major
+    //part a print column major:
     std::cout << "Column Major" << std::endl;
     for(int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
@@ -28,7 +28,7 @@ int main() {
         std::cout << std::endl;
     }
 
-    //print row major using pointer
+    //print row major using pointer:
     int *xptr = &(arr[0][0]);
     std::cout << std::endl;
     std::cout << "Print using pointers Row Major" << std::endl;
@@ -42,7 +42,7 @@ int main() {
     }
     std::cout << std::endl;
 
-    //part a and b make second array using pointers
+    //part a and b make second array using pointers:
     int arr2[5][5];
     int *xptr2 = &(arr2[0][0]);
 
@@ -51,7 +51,7 @@ int main() {
     }
 
 
-    //print column major using pointer
+    //print column major using pointer:
     std::cout << "\nPrint using pointers in column major after creating new"
                  "array because why would i refill the last one, also these "
                  "instructions are very weird and couldve been arranged "
