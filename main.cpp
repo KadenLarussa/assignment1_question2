@@ -46,10 +46,8 @@ int main() {
     int arr2[5][5];
     int *xptr2 = &(arr2[0][0]);
 
-    for(int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            arr2[i][j] = i * 5 + j;
-        }
+    for(int i = 0; i < 25; i++) {
+        *(xptr2 + i) = i;
     }
 
 
@@ -57,7 +55,8 @@ int main() {
     std::cout << "\nPrint using pointers in column major after creating new"
                  "array because why would i refill the last one, also these "
                  "instructions are very weird and couldve been arranged "
-                 "much easier" << std::endl;
+                 "much easier" << std::endl << std::endl;
+    std::cout << "Column major using pointers" << std::endl;
     xptr = &(arr2[0][0]);
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 5; j++) {
